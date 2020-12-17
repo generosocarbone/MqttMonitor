@@ -90,7 +90,7 @@ public class MqttHelper implements IMqttActionListener, MqttCallbackExtended {
     private void subscribeToTopic() {
         Log.d(TAG, "subscribeToTopic: subscribing");
         try {
-            mqttAndroidClient.subscribe("sensorResponse", 1, "SUBSCRIBE", this);
+            mqttAndroidClient.subscribe("#", 1, "SUBSCRIBE", this);
 
         } catch (MqttException ex) {
             Log.d(TAG, String.format("MQTT Error while subscribing: %s", ex.getMessage()));
