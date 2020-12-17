@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MQTToNBIoTTest</string>
+    <string name="placeholder">Waiting for incoming messages…</string>
+</resources>
